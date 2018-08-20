@@ -13,10 +13,10 @@ int main()
     matriz = (int***) malloc(nl*nc*nd*sizeof(int**));
     for (i=0; i<nl; i++)
     {
-        matriz[i] = (int**) malloc(nl*sizeof(int*));
-        for (j=0; j<nl; j++)
+        matriz[i] = (int**) malloc(nc*sizeof(int*));
+        for (j=0; j<nc; j++)
             {
-            for (k=0; k<nc; k++){
+            for (k=0; k<nd; k++){
                 matriz[i][j] = (int*) malloc(nc*sizeof(int));
             }
         }
