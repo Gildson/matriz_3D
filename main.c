@@ -14,7 +14,7 @@ int main()
     for (i=0; i<nl; i++)
     {
         matriz[i] = (int**) malloc(nl*sizeof(int*));
-        for (j=0; j=nl; j++)
+        for (j=0; j<nl; j++)
             {
             for (k=0; k<nc; k++){
                 matriz[i][j] = (int*) malloc(nc*sizeof(int));
