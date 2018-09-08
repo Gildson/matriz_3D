@@ -80,5 +80,8 @@ int main()
         printf("\n");
     }
     printf("\n");
+    
+    free(matriz);
+    free(matrizCopia);
     return 0;
 }
